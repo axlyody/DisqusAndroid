@@ -1,0 +1,3 @@
+include ':disqus'
+include ':sample'
+rootProject.name = "DisqusAndroidSample"
