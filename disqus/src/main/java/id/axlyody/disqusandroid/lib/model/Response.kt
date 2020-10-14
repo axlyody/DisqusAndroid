@@ -4,13 +4,15 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 
-class DisqusResponse<T> {
+class Response<T> {
     @Expose
     @SerializedName("cursor")
     var cursor: Cursor? = null
+
     @Expose
     @SerializedName("code")
     var code = 0
+
     @SerializedName("response")
     var data: T? = null
 }

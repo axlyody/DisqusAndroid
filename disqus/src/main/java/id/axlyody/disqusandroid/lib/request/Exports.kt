@@ -1,6 +1,6 @@
 package id.axlyody.disqusandroid.lib.request
 
-import id.axlyody.disqusandroid.lib.model.DisqusResponse
+import id.axlyody.disqusandroid.lib.model.Response
 import retrofit2.Call
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
@@ -13,5 +13,5 @@ interface getExports {
     fun exportForum(
         @Query("forum") forum: String,
         @QueryMap params: HashMap<String, String>
-    ): Call<DisqusResponse<String>>
+    ): Call<Response<String>>
 }

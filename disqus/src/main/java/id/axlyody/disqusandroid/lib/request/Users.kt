@@ -1,16 +1,19 @@
 package id.axlyody.disqusandroid.lib.request
 
-import id.axlyody.disqusandroid.lib.model.DisqusResponse
+import id.axlyody.disqusandroid.lib.model.Response
 import id.axlyody.disqusandroid.lib.model.users.UserDetails
 import retrofit2.Call
-import retrofit2.http.*
+import retrofit2.http.Field
+import retrofit2.http.FieldMap
+import retrofit2.http.FormUrlEncoded
+import retrofit2.http.POST
 
 interface getUsers {
     @FormUrlEncoded
     @POST("users/checkUsername.json")
     fun checkUsername(
         @Field("username") username: String? = null
-    ): Call<DisqusResponse<String>>
+    ): Call<Response<String>>
 
     @FormUrlEncoded
     @POST("users/details.json")

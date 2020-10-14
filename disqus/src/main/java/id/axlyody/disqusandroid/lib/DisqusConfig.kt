@@ -3,7 +3,7 @@ package id.axlyody.disqusandroid.lib
 import android.content.Context
 import okhttp3.logging.HttpLoggingInterceptor
 
-class DisqusConfig() {
+class DisqusConfig {
 
     companion object {
         private var _init: Context? = throw Exception("Initialize DisqusConfig.init() first")
