@@ -6,7 +6,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 class DisqusConfig {
 
     companion object {
-        private var _init: Context? = throw Exception("Initialize DisqusConfig.init() first")
+        private var _init: Context? = null
         private var _api_key: String? = null
         private var _api_secret: String? = null
         private var _access_token: String? = null
@@ -44,6 +44,6 @@ class DisqusConfig {
         fun accessToken() = _access_token
         fun oauthCallback() = _oauth_callback
         fun logLevel() = _log_level
-        fun context() = _init
+        fun context() = _init ?: throw Exception("Initialize DisqusConfig.init() first")
     }
 }

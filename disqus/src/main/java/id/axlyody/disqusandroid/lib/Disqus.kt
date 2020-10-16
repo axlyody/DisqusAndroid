@@ -51,7 +51,7 @@ class Disqus {
                                 } ?: run {
                                     addQueryParameter(
                                         "api_key",
-                                        config.context()?.getString(R.string.disqus_default_api_key)
+                                        config.context().getString(R.string.disqus_default_api_key)
                                     )
                                 }
                                 config.accessToken()?.let {
