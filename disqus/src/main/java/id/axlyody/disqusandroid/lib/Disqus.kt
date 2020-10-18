@@ -17,13 +17,22 @@ class Disqus {
         private var config = DisqusConfig
         private var base_url = "https://disqus.com/api/3.0/"
 
-        fun Threads() = load(getThreads::class.java) as getThreads
-        fun Users() = load(getUsers::class.java) as getUsers
-        fun Aet(): getAet = load(getAet::class.java) as getAet
+        fun Aet() = load(getAet::class.java) as getAet
         fun Apotechary() = load(getApotechary::class.java) as getApotechary
         fun Applications() = load(getApplications::class.java) as getApplications
+        fun Blacklist() = load(getBlacklist::class.java) as getBlacklist
         fun Category() = load(getCategory::class.java) as getCategory
         fun Exports() = load(getExports::class.java) as getExports
+        fun ForumCategories() = load(getForumCategories::class.java) as getForumCategories
+        fun Forums() = load(getForums::class.java) as getForums
+        fun Imports() = load(getImports::class.java) as getImports
+        fun Organizations() = load(getOrganizations::class.java) as getOrganizations
+        fun Pages() = load(getPages::class.java) as getPages
+        fun Threads() = load(getThreads::class.java) as getThreads
+        fun Trends() = load(getTrends::class.java) as getTrends
+        fun TrustedDomain() = load(getTrustedDomain::class.java) as getTrustedDomain
+        fun Users() = load(getUsers::class.java) as getUsers
+        fun Whitelists() = load(getWhitelists::class.java) as getWhitelists
 
 
         private fun load(T: Class<*>) = Retrofit.Builder()

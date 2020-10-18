@@ -2,7 +2,7 @@ package id.axlyody.disqusandroid.lib.request
 
 import retrofit2.http.*
 
-interface Forums {
+interface getForums {
     @FormUrlEncoded
     @POST("forums/addModerator.json")
     fun addModerator(
@@ -133,7 +133,7 @@ interface Forums {
         @Query("forum") forum: String,
         @QueryMap params: HashMap<String, String>
     )
-    
+
     @FormUrlEncoded
     @POST("forums/block/banPostAuthor.json")
     fun blockBanPostAuthor(

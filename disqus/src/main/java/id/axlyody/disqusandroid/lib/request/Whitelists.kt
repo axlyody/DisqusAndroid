@@ -2,7 +2,7 @@ package id.axlyody.disqusandroid.lib.request
 
 import retrofit2.http.*
 
-interface Whitelists {
+interface getWhitelists {
 
     @FormUrlEncoded
     @POST("whitelists/add.json")

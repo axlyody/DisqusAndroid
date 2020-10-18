@@ -2,7 +2,7 @@ package id.axlyody.disqusandroid.lib.request
 
 import retrofit2.http.*
 
-interface TrustedDomain {
+interface getTrustedDomain {
     @FormUrlEncoded
     @POST("trustedDomain/create.json")
     fun create(

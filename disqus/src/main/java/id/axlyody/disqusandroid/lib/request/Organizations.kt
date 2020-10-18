@@ -2,7 +2,8 @@ package id.axlyody.disqusandroid.lib.request
 
 import retrofit2.http.*
 
-interface Organizations {
+interface getOrganizations {
+
     @FormUrlEncoded
     @POST("organizations/addAdmin.json")
     fun addAdmin(

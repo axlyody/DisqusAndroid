@@ -5,7 +5,7 @@ import retrofit2.http.FieldMap
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
 
-interface Topics {
+interface getTopics {
     @FormUrlEncoded
     @POST("topics/update.json")
     fun update(

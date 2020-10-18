@@ -4,7 +4,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 import retrofit2.http.QueryMap
 
-interface Pages {
+interface getPages {
     @GET("pages/list.json")
     fun list(
         @Query("category") category: String,

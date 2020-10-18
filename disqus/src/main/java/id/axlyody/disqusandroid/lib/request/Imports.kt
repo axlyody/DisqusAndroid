@@ -4,7 +4,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 import retrofit2.http.QueryMap
 
-interface Imports {
+interface getImports {
 
     @GET("imports/details.json")
     fun imports(
